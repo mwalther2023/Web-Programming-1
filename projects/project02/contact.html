@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Contact Form</h1>
+    </header>
+    <nav>
+      <a href="index.html">[Back to home page]</a>
+    </nav>
+    <nav>
+      <a href="#bottom">[Down to bottom of page]</a>
+    </nav>
+    <img
+        src="https://cdn.pocket-lint.com/r/s/970x/assets/images/144872-games-review-hands-on-destiny-2-forsaken-initial-review-caydes-dead-baby-caydes-dead-image1-chkninsjru-jpg.webp"
+        alt="Destiny NPC"
+        title="Cayde Image"
+        width="500"
+      />
+    
+    <form action="submit.html" method="get">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          autocomplete="given-name"
+        />
+
+        <br>
+
+        <label>
+          Last Name:
+          <input
+            type="text"
+            id="lastname"
+            name="last_name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <br>
+
+        <label>
+          Email:
+          <input 
+            type="email"
+            id="email" 
+            name="email" 
+            placeholder="noreply@du.edu"
+          />
+        </label>
+      </fieldset>
+
+      <br>
+      <label>
+        Check this if you play Destiny:
+        <input type="checkbox" id="playit" name="playit" value="like"/>
+      </label>
+
+      <br>
+
+      <p>
+        What is your favorite Destiny Location?
+        <select name="patrolLocation">
+          <option>Cosmodrome</option>
+          <option value="EDZ">European Dead Zone</option>
+          <option>Nessus</option>
+          <option>Europa</option>
+          <option >The Moon</option>
+          <option>The Dreaming City</option>
+          <option>The Leviathan</option>
+        </select>
+
+
+        <br>
+        What is your favorite gamemodes?<br>
+        <select name="gamemode" size="5" multiple>
+          <optgroup label="PvE">
+            <option>Raids</option>
+            <option>Dungeons</option>
+            <option>Patrol Zone</option>
+            <option>Strikes</option>
+          </optgroup>
+
+          <optgroup label="PvP">
+            <option>Trials</option>
+            <option>Iron Banner</option>
+            <option>Competitive Survival</option>
+            <option>Control</option>
+            <option>Rift</option>
+            <option>Elimination</option>
+          </optgroup>
+
+          <optgroup label="PvEvP">
+            <option>Gambit</option>
+          </optgroup>
+        </select>
+      </p>
+
+      
+
+      <p>
+        <label>
+          Thought Space:<br>
+          <textarea
+            name="thoughtSpace"
+            rows="5"
+            cols="50"
+            placeholder="Share your thoughts!"
+          ></textarea>
+        </label>
+      </p>
+
+      <button type="submit">Submit your form!</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+
+    <hr>
+    <footer>
+      <h3 id="bottom">Review</h3>
+      <p>
+        Please use this form to reach out to us for your review of Destiny.
+      </p>
+      <nav>
+        <a href="#top">[Back to top of page]</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+  

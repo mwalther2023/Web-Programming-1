@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Destiny Data</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      tr:nth-of-type(odd) {
+        background-color: lightgreen;
+      }
+
+      tr:nth-of-type(even) {
+        background-color: skyblue;
+      }
+
+      tr:first-of-type {
+        background-color: initial;
+      }
+      .class{
+        background-color: blue;
+        color: white;
+      }
+      .weapon{
+        background-color: black;
+        color: white;
+      }
+      .armor{
+        background-color: black;
+        color: white;
+      }
+      ul.floated-navigation {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.floated-navigation li {
+        float: left;
+      }
+
+      ul.floated-navigation li a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 5px;
+        background-color: blue;
+        color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      ul.bottom-navigation {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.bottom-navigation li {
+        float: left;
+      }
+
+      ul.bottom-navigation li a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 5px;
+        background-color: blue;
+        color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Database</h1>
+      
+    </header>
+    <nav>
+      <div>
+        <ul class="floated-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Review</a></li>
+          
+          <li><a href="#bottom">Bottom</a></li>
+        </ul>
+      </div>
+    </nav>  
+    <br> <br> <br>
+    <nav>
+      <a href="index.html">[Back to home page]</a>
+    </nav>
+    <nav>
+      <a href="#bottom">[Down to bottom of page]</a>
+    </nav>
+    <hr>
+    <img
+        src="https://staticg.sportskeeda.com/editor/2022/01/d530f-16428009447969-1920.jpg"
+        alt="Destiny Gunsmith"
+        title="Gunsmith"
+        width="500"
+      />
+    
+    <h2>
+      Exotic Data
+    </h2>
+    <table>
+      <tr>
+        <th colspan="2" class="weapon">Exotic Weapons</th>
+      </tr>
+      <tr>
+        <th>Weapon Slot</th>
+        <th>Number of Exotics</th>
+      </tr>
+      <tr>
+        <td>Kinetic</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Energy</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>Power</td>
+        <td>27</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <th colspan="3" class="armor">Exotic Armor</th>
+      </tr>
+      <tr>
+        <th rowspan="3" class="class">Classes</th>
+        <td>Warlock</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <td>Titan</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>Hunter</td>
+        <td>37</td>
+      </tr>
+    </table>
+
+    
+    <hr>
+    <footer>
+      <h3 id="bottom">Created By:</h3>
+      <p>
+        Matthew Walther DU'23
+      </p>
+      <!-- <nav>
+        <a href="#top">[Back to top of page]</a>
+      </nav> -->
+      <div>
+        <ul class="bottom-navigation">
+          <li><a href="#top">Top</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+  

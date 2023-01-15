@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project 02</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+      h1{
+        color: darkblue;
+        font-size: 2em;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      $(document).ready(() => {
+        let index = 1;
+        $("#logo").click(() => {
+          // var img1 = document.getElementById("logo");
+          var img_arr = ["https://wolfsgamingblog.files.wordpress.com/2013/07/destiny_desktop.jpg","https://cdn.vox-cdn.com/thumbor/Ce2hdWjEPNClqNdHiVSLRItbV9g=/0x0:3997x2248/1200x800/filters:focal(1680x805:2318x1443)/cdn.vox-cdn.com/uploads/chorus_image/image/53917757/destiny_2_art_3997.0.jpg", "https://preview.redd.it/8135266x4er41.jpg?auto=webp&s=5363fd4165e2b41a9b79e46d1d6d1967e0e1018b","https://www.pngitem.com/pimgs/m/206-2067776_planet-destiny-on-twitter-ghost-emblem-destiny-2.png"];
+          
+          if(index == img_arr.length-1){
+            $("#logo").attr("src",img_arr[index]);
+            index = 0;
+            
+          }
+          else{
+            
+            $("#logo").attr("src",img_arr[index]);
+            index++;
+            
+          }
+                 
+          
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Project 01</h1>
+    </header>
+    <hr>
+    <h3>Images of Destiny (Click Me)</h3>
+    <img
+        src="https://wolfsgamingblog.files.wordpress.com/2013/07/destiny_desktop.jpg"
+        alt="Destiny Logo"
+        title="Destiny"
+        width="500"
+
+        id="logo"
+      />
+    <nav>
+      <a href="about.html">About Destiny</a>
+    </nav>
+    <nav>
+      <a href="locations.html">Locations of Destiny</a>
+    </nav>
+    <nav>
+      <a href="contact.html">Review Destiny</a>
+    </nav>
+    <nav>
+      <a href="data.html">Gear Data</a>
+    </nav>
+
+    <hr>
+    <footer>
+      <nav>
+        <a href="https://www.bungie.net" target="_blank">Official Destiny Site</a>
+      </nav>
+      <h3 id="bottom">Created By:</h3>
+      <p>
+        Matthew Walther DU'23
+      </p>
+    </footer>
+  </body>
+</html>
+
+  

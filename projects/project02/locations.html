@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project 02</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      $(document).ready(() => {
+        let index = 1;
+        // $("#logo").click(() => {
+        //   // var img1 = document.getElementById("logo");
+        //   var img_arr = ["https://www.gamerevolution.com/wp-content/uploads/sites/2/2020/06/Destiny-2-Content-Vault-Map-Beyond-Light.jpg","https://images.pushsquare.com/b15299d9d688e/destiny-2-dusklight-shards-locations-ps4-playstation-4-1.large.jpg","https://cdn1.dotesports.com/wp-content/uploads/2021/06/24164328/D2_Moon_01.jpg","https://www.gamersheroes.com/wp-content/uploads/2018/09/Destiny-2-Forsaken-Week-3-All-Wanted-Bounty-Locations.jpg"];
+          
+        //   if(index == img_arr.length-1){
+        //     $("#logo").attr("src",img_arr[index]);
+        //     index = 0;
+            
+        //   }
+        //   else{
+            
+        //     $("#logo").attr("src",img_arr[index]);
+        //     index++;
+            
+        //   }
+                 
+          
+        // });
+        var edz = document.getElementById("edz");
+        edz.addEventListener("click", function () {
+          alert("Released with the base game of Destiny 2 in 2017, one of the largest patrol zones in the game.");
+        });
+        var europa = document.getElementById("europa");
+        europa.addEventListener("click", function () {
+          alert("Released with the Beyond Light DLC in 2020, this DLC introduced a new darkness subclass and an active weather environment.");
+        });
+        var moon = document.getElementById("moon");
+        moon.addEventListener("click", function () {
+          alert("A location from the base game of Destiny re-introduced to Destiny 2 in the Shadowkeep DLC in 2019 with updated graphics and environment.");
+        });
+        var cosmo = document.getElementById("cosmo");
+        cosmo.addEventListener("click", function () {
+          alert("A location from the base game of Destiny re-introduced to Destiny 2 with the Beyond Light DLC in 2020 for free, only parts of the final version from Destiny was added to Destiny 2.");
+        });
+        var nessus = document.getElementById("nessus");
+        nessus.addEventListener("click", function () {
+          alert("Released with the base game of Destiny 2 in 2017, this location played a key role in the Red War campaign.");
+        });
+        var dream = document.getElementById("dream");
+        dream.addEventListener("click", function () {
+          alert("Released with the Forsaked DLC in 2019 this was one of two locations included in the DLC but was the only one left in the game after a wave of content vaulting removed the Tangled Shore.");
+        });
+        var levi = document.getElementById("levi");
+        levi.addEventListener("click", function () {
+          alert("Released with the base game of Destiny 2 in 2017 it was originally a large environment for a raid gamemode but was later removed due to content vaulting to be later changed and re-added as a patrol zone with the Season of the Haunted in Summer 2022.");
+        });
+
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header id>
+      <h1 id="top">Locations of Destiny Project02</h1>
+    </header>
+    <nav>
+      <a href="index.html">[Back to home page]</a>
+    </nav>
+    <nav>
+      <a href="#bottom">[Down to bottom of page]</a>
+    </nav>
+    <hr>
+    <h3>Locations of Destiny (Click Locations for Information)</h3>
+    <img
+        src="https://www.gamerevolution.com/wp-content/uploads/sites/2/2020/06/Destiny-2-Content-Vault-Map-Beyond-Light.jpg"
+        alt="Destiny Logo"
+        title="Destiny"
+        width="500"
+
+        id="logo"
+      />
+    <br>
+    <li id="edz">European Dead Zone (EDZ)</li>
+    <li id="europa">Europa</li>
+    <li id="moon">The Moon</li>
+    <li id="cosmo">The Cosmodrome</li>
+    <li id="nessus">Nessus</li>
+    <li id="dream">The Dreaming City</li>
+    <li id="levi">The Leviathan</li>
+    <br>
+    <hr>
+    <footer>
+      <nav>
+        <a href="#top">[Back to top of page]</a>
+      </nav>
+      <h3 id="bottom">Created By:</h3>
+      <p>
+        Matthew Walther DU'23
+      </p>
+    </footer>
+  </body>
+</html>
+
+  

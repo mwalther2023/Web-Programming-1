@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+
+    <style>
+      /*input:invalid {
+        background-color: red;
+      }*/
+      ul.floated-navigation {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        
+      }
+
+      ul.floated-navigation li {
+        float: left;
+        font-family: serif;
+      }
+
+      ul.floated-navigation li a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 5px;
+        background-color: blue;
+        color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      ul.bottom-navigation {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.bottom-navigation li {
+        float: left;
+        font-family: serif;
+      }
+
+      ul.bottom-navigation li a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 5px;
+        background-color: blue;
+        color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      body {
+        background: url(https://cdn.pocket-lint.com/r/s/970x/assets/images/144872-games-review-hands-on-destiny-2-forsaken-initial-review-caydes-dead-baby-caydes-dead-image1-chkninsjru-jpg.webp);
+        background-size: 100% auto;
+          /*background-color: black;*/
+          color: white;
+          background-attachment: fixed;
+      }
+      input[type=text]{
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #3CBC8D;
+        color: white;
+      }
+      textarea{
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #3CBC8D;
+        color: white;
+      }
+      textarea::placeholder{
+        color: black;
+      }
+      select{
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #3CBC8D;
+        color: black;
+      }
+      button{
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #3CBC8D;
+        color: black;
+      }
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      $(document).ready(() => {
+        var sub = document.getElementById("submit");
+        sub.addEventListener("click", function () {
+          if(confirm("Are you sure you wish to submit your form?")){
+            window.location.href = "submit.html";
+          }
+          
+        });
+        var res = document.getElementById("reset");
+        res.addEventListener("click", function () {
+          if(confirm("Are you sure you wish to reset your form?")){
+            window.location.href = "contact.html";
+          }
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Contact Form</h1>
+    </header>
+    <nav>
+      <div>
+        <ul class="floated-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          
+          <li><a href="data.html">Gear Data</a></li>
+          <li><a href="#bottom">Bottom</a></li>
+        </ul>
+      </div>
+    </nav>  
+    <br> <br> <br>
+    <!-- <nav>
+      <a href="index.html">[Back to home page]</a>
+    </nav>
+    <nav>
+      <a href="#bottom">[Down to bottom of page]</a>
+    </nav> -->
+    <!-- <img
+        src="https://cdn.pocket-lint.com/r/s/970x/assets/images/144872-games-review-hands-on-destiny-2-forsaken-initial-review-caydes-dead-baby-caydes-dead-image1-chkninsjru-jpg.webp"
+        alt="Destiny NPC"
+        title="Cayde Image"
+        width="500"
+      /> -->
+    
+    <form action= "" method="get">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="user_name"
+        />
+
+        <br>
+
+        <label>
+          Platform:
+          <input
+            type="text"
+            id="platform"
+            name="platform"
+          />
+        </label>
+      </fieldset>
+
+      <br>
+      <label>
+        Check this if you play Destiny:
+        <input type="checkbox" id="playit" name="playit" value="like"/>
+      </label>
+
+      <br>
+
+      <p>
+        What is your favorite Destiny Location?
+        <select name="patrolLocation" class="patrolLocation">
+          <option>Cosmodrome</option>
+          <option value="EDZ">European Dead Zone</option>
+          <option>Nessus</option>
+          <option>Europa</option>
+          <option >The Moon</option>
+          <option>The Dreaming City</option>
+          <option>The Leviathan</option>
+        </select>
+
+
+        <br>
+        What is your favorite gamemodes?<br>
+        <select name="gamemode" size="5" multiple class="gamemode">
+          <optgroup label="PvE">
+            <option>Raids</option>
+            <option>Dungeons</option>
+            <option>Patrol Zone</option>
+            <option>Strikes</option>
+          </optgroup>
+
+          <optgroup label="PvP">
+            <option>Trials</option>
+            <option>Iron Banner</option>
+            <option>Competitive Survival</option>
+            <option>Control</option>
+            <option>Rift</option>
+            <option>Elimination</option>
+          </optgroup>
+
+          <optgroup label="PvEvP">
+            <option>Gambit</option>
+          </optgroup>
+        </select>
+      </p>
+
+      
+
+      <p>
+        <label>
+          Thought Space:<br>
+          <textarea
+            name="thoughtSpace"
+            rows="5"
+            cols="50"
+            placeholder="Share your thoughts!"
+          ></textarea>
+        </label>
+      </p>
+
+      
+    </form>
+    <button type="reset" id="reset">Reset Form</button>
+    <button type="submit" id="submit">Submit your form!</button>
+      
+
+    <hr>
+    <footer>
+      <nav>
+        <div>
+          <ul class="bottom-navigation">
+            <li><a href="#top">Top</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br><br>
+      <h3 id="bottom">Review</h3>
+      <p>
+        Please use this form to reach out to us for your review of Destiny.
+      </p>
+      <!-- <nav>
+        <a href="#top">[Back to top of page]</a>
+      </nav> -->
+
+    </footer>
+  </body>
+</html>
+
+  
