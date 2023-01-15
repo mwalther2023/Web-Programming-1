@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 07</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Lab 07</h1>
+    </header>
+
+    <form action="/form-handler" method="get">
+      <fieldset>
+        <legend>Customer Information</legend>
+        <!-- first name entry -->
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          pattern="\D+"
+        />
+        <br>
+        <label for="alternation">Fast|Slow:</label>
+        <input
+          type="text"
+          id="alternation"
+          name="alternation"
+          pattern="fast|slow"
+        />
+        <br>
+        <label for="quant">Quantifier ###:</label>
+        <input
+          type="tel"
+          id="quant"
+          name="quant"
+          pattern="[0-9]{3}"
+          placeholder="###"
+        />
+        <br>
+        <label for="bound">Boundary $:</label>
+        <input
+          type="text"
+          id="bound"
+          name="bound"
+          pattern=".[a-z]{2,}$"
+          placeholder=".com"
+        />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <video
+      width="560"
+      height="315"
+      controls
+    >
+    <source src="hello-there.mp4" type="video/mp4">
+      Obi-Wan Hello There
+    </video>
+    <br>
+    <audio
+      controls
+      src="r2-d2.mp3"
+    >
+      R2-D2 Scream
+    </audio>
+  </body>
+</html>
+
+  

@@ -1,0 +1,98 @@
+.red {
+  background-color: red;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.flexbox {
+  display: flex;
+  border: 4px solid blue;
+  /*align-items: space-around;*/
+  align-content: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+
+.box {
+  /*   width: 50px; */
+  flex: 1 1 150px;
+  flex: 1 1 auto;
+}
+
+.large-box {
+  width: 50%;
+  height: 350px;
+}
+
+.box4 {
+  /*   align-self: flex-end; */
+  /*   flex: 3 1 150px; */
+  flex: 3 1 auto;
+}
+
+#layout {
+  display: grid;
+  border: 4px solid blue;
+
+  grid:
+    [header-start] "header2 header1 header" 100px
+    [content-start] "ads main links" 400px
+    [footer-start] "footer footer footer" 100px
+    / [ads] 200px [main] 1fr [links] 200px;
+  
+  grid-gap: 20px 50px;
+}
+
+#one {
+  grid-area: header1;
+}
+
+#two {
+  grid-area: ads;
+}
+
+#three {
+  grid-area: main;
+}
+
+#four {
+  grid-area: links;
+}
+
+#five {
+  grid-area: footer;
+}
+#six {
+  grid-area: header;
+}
+#seven {
+  grid-area: header2;
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 12</title>
+
+    <style>
+      html {
+        font-size:100%;
+      }
+      input:invalid {
+        background-color: red;
+      }
+
+      h1 {
+        color: blue;
+        font-size: x-large;
+      }
+
+      h2 {
+        /*color: blue;
+        font-size: 75%;*/
+        font: oblique bold 75% Verdana, sans-serif;
+      }
+
+      p {
+/*         font-size: small; */
+        font-size: 32px;
+/*         font-family: sans-serif; */
+        font-family: "Times New Roman","Comic sans", serif;
+      }
+      .em {
+        font-family: "Comic sans", cursive;
+        font-size: 1.5em;
+      }
+      .bold{
+        font-weight: bold;
+        font-variant: small-caps;
+      }
+      .ital{
+        font-style: italic;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      $(document).ready(() => {});
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Lab 12 with x-large font-size</h1>
+    </header>
+
+    <h2>I'm a header2 with a oblique bold 75% font-size in Verdana, sans-serif!</h2>
+
+    <p>
+      I'm a paragraph inheriting font-family: "times new roman", "comic sans", serif!
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ol>
+    </p>
+
+    <!-- <p style="font-size: 1.5em;">
+        Paragraph with a different font size of 1.5em
+        <p style="font-size: 75%;">
+          Nested paragraph with 75% size
+        </p>
+        <p style="font-size: x-large;">
+          Nested paragraph with x-large size
+        </p>
+    </p> -->
+    <ul>
+      <li class="em">
+        List item with 1.5em font-size
+      </li>
+      <li class="bold">
+        List item with bold text and vairent font 0
+      </li>
+      <li class="ital">
+        List item with italicized text
+      </li>
+    </ul>
+    <p>
+      This paragraph contains a <b>BOLD</b>
+    </p>
+    <script type="module"></script>
+  </body>
+</html>
+
+  

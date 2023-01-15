@@ -1,0 +1,106 @@
+.margin {
+  margin: 2em;
+}
+
+.large-box {
+  width: 450px;
+}
+
+.small-box {
+  width: 200px;
+}
+
+ul.navigation li {
+  display: inline;
+  background-color: green;
+  border-radius: 2em;
+  padding: 10px;
+  box-shadow: 6px 6px 5px red;
+}
+ul.disp li{
+  display: table;
+  background-color: blue;
+  color: white;
+  border-radius: 2em;
+  padding: 10px;
+  box-shadow: 6px 6px 5px green;
+}
+ul.navigation li a {
+  display: block;
+}
+
+.float-right {
+  float: right;
+  margin: 20px;
+}
+
+.float-left {
+  float: left;
+  margin: 1em;
+}
+
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+
+.green-background {
+  background-color: green;
+}
+ul.nav-menu {
+  z-index: 15;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 70%;
+  bottom: 1px;
+}
+
+ul.nav-menu li {
+  float: left;
+}
+
+ul.nav-menu li a {
+  display: block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: skyblue;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.dotted-border {
+  border: 3px dotted blue;
+}
+.pos{
+  position: absolute;
+  top: 70em;
+  left: 3em;
+  background-color: red;
+}
+#clear-fix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.overlap{
+  z-index: 10;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+}
+.overlap2{
+  z-index: 5;
+  position: absolute;
+  top: 77%;
+  left: 12%;
+}

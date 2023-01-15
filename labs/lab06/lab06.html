@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>lab06</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>lab06</h1>
+    </header>
+
+    <form action="/form-handler" method="get">
+      
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          autocomplete="given-name"
+        />
+
+        <br>
+
+        <label>
+          Last Name:
+          <input
+            type="text"
+            id="lastname"
+            name="last_name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <br>
+
+        <label>
+          Email:
+          <input type="email" id="email" name="email" placeholder="noreply@du.edu" />
+        </label>
+      </fieldset>
+
+      <br>
+      <label>
+        Check if you like this form:
+        <input type="checkbox" id="likeit" name="likeit" value="like"/>
+      </label>
+
+      <br>
+
+      <p>
+        What is your favorite music genre?
+        <select name="musicGenre">
+          <option>Classic Rock</option>
+          <option>Hip Hop</option>
+          <option>Metal</option>
+          <option>Rap</option>
+          <option value="EDM">Electronic Dance Music</option>
+          <option>Jazz</option>
+          <option>Classical</option>
+        </select>
+        <br>
+        What is your favorite Ice Cream flavor?
+        <select name="iceCream" size="3" multiple>
+          <optgroup label="Best Flavors">
+            <option>Chocolate</option>
+            <option>Mint Chocolate Chip</option>
+            <option>Cookies and Creme</option>
+          </optgroup>
+
+          <optgroup label="Meh Flavors">
+            <option>Butterscotch</option>
+            <option>Chocolate Chip Cookie Dough</option>
+            <option>Vanilla</option>
+            <option>Strawberry</option>
+          </optgroup>
+        </select>
+      </p>
+
+      
+
+      <p>
+        <label>
+          Tweet Space:
+          <textarea
+            name="tweet space 1"
+            rows="5"
+            cols="50"
+          >Share your thought</textarea>
+        </label>
+      </p>
+      <br>
+
+      <button type="submit">Submit your form!</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>
+
+  

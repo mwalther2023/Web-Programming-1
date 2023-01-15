@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 10</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        console.log("READY");
+
+
+        //Inner HTML
+        let topHeader = document.getElementById("top");
+        console.log(topHeader);
+        if (topHeader) {
+          topHeader.innerHTML = "<h1>Lab10 InnerHTML</h1>";
+          console.log(topHeader.innerHTML);
+        } else {
+          console.error("No element on page with ID 'topHeader'");
+        }
+
+        //Input getByTag
+        let inp = document.getElementsByTagName("input");
+        console.log("ALL INPUT");
+        for (let i = 0; i < inp.length; i++) {
+          inp[i].setAttribute("title","Loop Title")
+        }
+
+        //DOM
+
+          //AppendChild
+          console.log("AppendChild");
+          let div = document.getElementById("dom-div");
+          let newParagraph = document.createElement("p");
+          let text = document.createTextNode("AppendChild Text");
+          newParagraph.appendChild(text);
+          div.appendChild(newParagraph);
+
+          //RemoveChild
+          console.log("RemoveChild");
+          let removeParagraph = document.getElementById("remove-p");
+          div.removeChild(removeParagraph);
+
+          //InsertBefore
+          console.log("InsertBefore");
+          let newLi = document.createElement("li");
+          let insertText = document.createTextNode("Milk");
+          newLi.appendChild(insertText);
+          let list = document.getElementById("list");
+          list.insertBefore(newLi, list.children[0]);
+
+
+        //
+        $("#para1").click(() => {
+          var para1 = document.getElementById("para1");
+          console.log("Paragraph 1: "+para1.className);
+          $("#para1").html("Hello, World!");
+          $("#para1").addClass("class2");
+          
+          console.log("Paragraph 1: "+para1.className);
+        });
+
+        $("p:last").click(() =>{
+          var para2 = document.getElementById("para2");
+          console.log("Last Paragraph: "+para2.className);
+          $("#para2").html("Changed text from click");
+          $("#para2").addClass("class2");
+          
+          console.log("Last Paragraph: "+para2.className);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Lab 10</h1>
+    </header>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          autocomplete="given-name"
+          title="name";
+        />
+
+        <br>
+
+        <label>
+          Last Name:
+          <input
+            type="text"
+            id="lastname"
+            name="last_name"
+            autocomplete="family-name"
+            title="name"
+          />
+        </label>
+
+        <br>
+
+        <label>
+          Email:
+          <input 
+            type="email"
+            id="email" 
+            name="email" 
+            placeholder="noreply@du.edu"
+            title="text"
+          />
+        </label>
+        <br>
+        <label>
+          Check this:
+          <input 
+            type="checkbox" 
+            id="playit" 
+            name="playit" 
+            value="like"
+            title="text"
+          />
+        </label>
+      </fieldset>
+      <div id="dom-div">
+        <p id="remove-p">Remove this paragraph</p>
+      </div>
+      <ul id="list">
+        <li id="water">Water</li>
+        <li id="soda">Soda</li>
+      </ul>
+      <p class="class1" id="para1">Paragraph 1 (Click Me)</p>
+      <p class="class3" id="para2">Paragraph 2 (Click Me)</p>
+  </body>
+</html>
+
+  

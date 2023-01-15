@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 09</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+
+    <script type="text/javascript">
+      
+      function Phone(make, model) {
+          this.make = make;
+          this.model = model;
+          this.type = "Smartphone";
+      }
+      var myphone = new Phone("Apple", "13", 2);
+      console.log("Phone Object: "+ myphone.make + " "+myphone.model);
+    
+
+      var Car = {
+        
+        owner: {
+          name: "Matthew",
+          age: "21",
+          home: "Florida",
+        },
+        type: "SUV",
+        color: "Black",
+        // Method which will display Car properties
+        displayType: function () {
+          console.log("Car Object: "+this.color+" "+this.type);
+        },
+        upgrades: ["4WD","Leather Seats", "Removeable Roof"],
+      };
+
+      var car1 = Object.create(Car);
+      car1.displayType();
+      //Dynamically add Car model
+      car1.model = "Jeep";
+      console.log(car1.model);
+      //Nested Object owner
+      console.log(car1.owner);
+      //upgrades array
+      console.log(car1.upgrades);
+
+
+
+      function bodyClicked() {
+        alert("Window Clicked! This is an alert!");
+      }
+      function show(){
+        confirm("You have clicked the window, this is a confirm window.");
+      }
+      window.onclick = show;
+      //window.onclick = bodyClicked;
+      window.addEventListener("click", bodyClicked);
+
+
+
+    </script>
+  
+
+
+  </head>
+  <!--   <body onclick="bodyClicked()"> -->
+  <body>
+    <header id="top">
+      <h1>Lab 09</h1>
+    </header>
+
+    <ul id="list">
+      <li id="listitem">List item 1</li>
+    </ul>
+
+    <p onmouseover="myFunction();">Paragraph with html event onmouseover to console.log()</p>
+
+    <script>
+      var list = document.getElementById("list");
+      var item = document.getElementById("listitem");
+
+
+      item.addEventListener("click", function () {
+        alert("List item clicked from listener");
+      });
+      function myFunction(){
+        console.log("Paragraph was mousedOver");
+      }
+      item.onmousemove = function() {
+        console.log("List is detecting mouse movement");
+      }
+    </script>
+  </body>
+</html>
+
+  

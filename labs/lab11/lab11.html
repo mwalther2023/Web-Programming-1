@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 11</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      $(document).ready(() => {});
+      import { Lab11 } from "./lab11.js";
+      let myLab = new Lab11();
+
+      //TestDefaultParameters
+      // console.log(myLab.testDefaultParameters(10));
+      let {first, second} = myLab.testDefaultParameters(10);
+      console.log(second);
+      
+      //TestTemplateLiterals
+      console.log(myLab.testTemplateLiterals("John","Johnny","Doe"));
+
+      //TestMultilineString
+      console.log(myLab.testMultilineStrings());
+
+      //TestSortWithArrowFunction
+      let arr = [8,13,1,7];
+      console.log(myLab.testSortWithArrowFunction(arr));
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Lab 11</h1>
+    </header>
+
+    <!--     <script type="module" src="script.js"></script> -->
+    <script type="module">
+      
+    </script>
+  </body>
+</html>
+
+  

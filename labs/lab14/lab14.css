@@ -1,0 +1,102 @@
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: #00f0ff;
+}
+
+tr:nth-of-type(odd) {
+  background-color: lightgreen;
+}
+
+tr:nth-of-type(even) {
+  background-color: skyblue;
+}
+
+tr:first-of-type {
+  background-color: red;
+}
+
+.firstLetter p::first-letter {
+  font-size: 300%;
+  color: green;
+}
+
+.bef p:before {
+  content: "Once upon a time: ";
+  font-weight: bold;
+  color: purple;
+}
+
+
+a[href*="xyz"] {
+  border: 3px solid;
+}
+img[class="star"]{
+  border: 5px solid aqua;
+}
+
+body {
+  /*background-repeat:repeat-x; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-image: url(https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=750); */
+  background: url(https://www.gamespot.com/a/uploads/scale_medium/1573/15735876/3201896-starwars-main2.jpg) repeat-x center fixed;
+  background-size: 150px;
+}
+
+.gradient {
+  width: 350px;
+  background: radial-gradient(
+    farthest-side at right bottom,
+    yellow,
+    orange 50%,
+    purple
+  );
+}
+
+.width {
+  box-sizing: border-box;
+  background-color: blue;
+  color: white;
+  border: 5px solid green;
+  padding: 20px;
+  width: 300px;
+}
+.width2 {
+  box-sizing: content-box;
+  background-color: red;
+  color: white;
+  border: 5px solid aqua;
+  padding: 50px;
+  width: 200px;
+}
+.scroll{
+  width:200px; 
+  height:200px;
+  overflow:scroll;
+}
+.pad{
+  padding: 10px;
+}
+.borderStyle{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: red blue;  
+  padding: 15px;
+  background-color: skyblue;
+}
+.round{
+  border-style: solid;
+  border-width: 5px;
+  border-color: green yellow;  
+  border-radius: 70px;
+  background-color: skyblue;
+}

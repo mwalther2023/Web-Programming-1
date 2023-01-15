@@ -1,0 +1,82 @@
+.transform2d:hover,
+.transform2d:focus {
+  transform: rotate(10deg) translate(200px) scale(.5);
+}
+
+.transform2d {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.transform2d2:hover,
+.transform2d2:focus {
+  transform: rotate(5deg);
+  background-color: red;
+  color: blue;
+}
+
+.transform2d2 {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+ul {
+  width: 100%;
+  height: 100px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  perspective: 600px;
+}
+
+li {
+  float: left;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in;
+}
+
+li:hover,
+li:focus {
+  transform: rotateX(45deg) rotateY(45deg);
+}
+
+li img {
+  width: 350px;
+}
+
+@keyframes colors {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+.animation {
+  animation: colors 5s linear infinite alternate;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 2em;
+  width: 10em;
+  border-radius: 1.5em;
+  color: #ffffff;
+}
+@media screen and (max-width:  1000px){
+  h2{
+    color: blue;
+  }
+}
